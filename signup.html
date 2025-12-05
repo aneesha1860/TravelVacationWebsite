@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign Up - Travel Vacation Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body style="background-color: black;">
+    <div class="register">
+        <img src="travel_images/signup.png" alt="Image">
+
+        <div class="modal"  id="loginForm" style="margin-right: 7rem;">
+            <button class="close-btn">&times;</button>
+            <h2 id="modalTitle">Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required/>
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <div style="display:flex; align-items:center; margin-bottom: 1rem;">
+                    <button type="submit" class="sign-btn">Sign Up</button>
+                </div>
+            </form>
+
+            <div class="create-account" style="text-align: center;">
+                Already have an account? <a href="register-login.html">Log in</a>
+            </div> 
+        </div>
+
+        <div id="message">
+            <p>Sign Up Successfully</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            form.classList.add("fade-out");
+
+            form.addEventListener("animationend", () => {
+
+                form.style.display = "none";
+
+                message.style.display = "block";
+                message.classList.add("fade-in");
+
+                setTimeout(() => {
+                    window.location.href = "home1.html";
+                }, 1200);
+
+            }, { once: true });
+        });
+    </script>
+
+</body>
+</html>

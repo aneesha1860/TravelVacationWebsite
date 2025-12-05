@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Vacation Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="travel_images/logo.png" alt="Logo"/>
+            <span>Wanderwise</span>
+        </div>
+
+        <div class="search_nav">
+            <div class="search-box" id="myInput">
+                <input type="text"  id="inputvalue" placeholder="Search Destinations">
+                <a href="destination.html"><button><i class="fa fa-search"></i></button></a>
+            </div>
+
+            <nav class="menu">
+                <a href="home1.html">Home</a>
+                <a href="contact.html" class="active">Destinations</a>
+                <a href="categories.html">Categories</a>
+                <a href="packages.html">Packages</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="user-details">
+            <div class="profile-menu">
+                <img src="travel_images/profile.jpg" alt="user" class="user-profile" onclick="toggleMenu()">
+
+                <div class="dropdown" id="dropdownMenu">
+                    <h3>My Accounts</h3>
+                    <a href="personal_information.html">Personal Information<span>→</span></a>
+                    <a href="mybooking.html">My Booking<span>→</span></a>
+                    <a href="password_manager.html">Password Manager<span>→</span></a>
+                    <a href="logout.html">Logout<span>→</span></a>
+                </div>
+            </div>
+            <a href="wishlist.html" class="icon1"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" class="icon1"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="" class="icon1"><i class="fa-regular fa-bell"></i></a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="landing-page1">
+            <div class="hero-section2">
+                <div class="textcontent3">Destination your way</div>
+                <div class="textcontent4">in the world</div>
+            </div>
+        </section>
+
+        <section class="destination-container">
+            <a href="balivacationtrip.html" class="destination-card destination">
+                <img src="travel_images/popular1.png" alt="paris">
+                <p class="place">Paris</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </a>
+
+            <a href="balivacationtrip.html" class="destination-card destination">
+                <img src="travel_images/popular2.png" alt="Bali">
+                <p class="place">Bali</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </a>
+
+            <a href="balivacationtrip.html" class="destination-card destination">
+                <img src="travel_images/popular3.jpg" alt="Cape Town">
+                <p class="place">Cape Town</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </a>
+
+            <a href="balivacationtrip.html" class="destination-card destination">
+                <img src="travel_images/popular4.jpg" alt="Rome">
+                <p class="place">Rome</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </a>
+
+            <div class="destination-card">
+                <img src="travel_images/destination1.jpg" alt="California">
+                <p class="place">California</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination2.jpg" alt="Indonesia">
+                <p class="place">Indonesia</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination3.jpg" alt="Switzerland">
+                <p class="place">Switzerland</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination4.jpg" alt="Maldives">
+                <p class="place">Maldives</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination5.jpg" alt="Mangoliya">
+                <p class="place">Mangoliya</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination6.jpg" alt="Megalaya">
+                <p class="place">Megalaya</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination7.jpg" alt="Tokyo">
+                <p class="place">Tokyo</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+
+            <div class="destination-card">
+                <img src="travel_images/destination8.jpg" alt="Dubai">
+                <p class="place">Dubai</p>
+                <p class="description">Wander Through cobbled streets, marvel at world-renowned landmarks like the Eiffel Tower and Notr-Dame, or sip espresso at a charming Parisian Cafe.</p>
+                <div class="button1">
+                    <button class="read-btn">Read more</button>
+                    <button class="view-btn">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="travel_images/logo.png" alt="Logo"/>
+                <span>Wanderwise</span>
+            </div>
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>How It Works</li>
+                    <li>Success</li>
+                    <li>Vacations</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Browse</li>
+                    <li>Packages</li>
+                    <li>Categories</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Explore</h2>
+                <ul>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                    <li>City Tours</li>
+                    <li>Family</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact & Social</h2>
+                <ul>
+                    <li>123 saik street, chennai, TN</li>
+                    <li>+91-7867980-688</li>
+                    <li>Wan@wanderwisetravel.com</li>
+                </ul>
+            </div>
+
+            <img src="travel_images/footer-logo.jpg" alt="Footer Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-container2">
+            <div class="footer-section1">
+                <p class="copyrights">&copy; 2025 wanderwisevacation. All rights reserved.</p>
+                <p class="terms">Terms & Conditions | Privacy Policy</p>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us On:</h2>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook facebook-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const inp = document.getElementById("inputvalue")
+
+        input.addEventListener('click', function() {
+            inp.value = "Destination Lists";
+        });
+
+        document.querySelectorAll('.btnwishlist').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const icon = this.querySelector('.icon');
+                
+                if (icon.classList.contains('fa-regular')) {
+                    icon.classList.remove('fa-regular');
+                    icon.classList.add('fa-solid');
+                } else {
+                    icon.classList.remove('fa-solid');
+                    icon.classList.add('fa-regular');
+                }
+
+                icon.classList.toggle('active');
+            });
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.profile-menu')) {
+                document.getElementById('dropdownMenu').style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Travel Vacation Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="travel_images/logo.png" alt="Logo"/>
+            <span>Wanderwise</span>
+        </div>
+
+        <div class="search_nav">
+            <div class="search-box" id="myInput">
+                <input type="text"  id="inputvalue" placeholder="Search Destinations">
+                <a href="destination.html"><button><i class="fa fa-search"></i></button></a>
+            </div>
+
+            <nav class="menu">
+                <a href="home1.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="categories.html">Categories</a>
+                <a href="packages.html">Packages</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="user-details">
+            <div class="profile-menu">
+                <img src="travel_images/profile.jpg" alt="user" class="user-profile" onclick="toggleMenu()">
+
+                <div class="dropdown" id="dropdownMenu">
+                    <h3>My Accounts</h3>
+                    <a href="personal_information.html">Personal Information<span>→</span></a>
+                    <a href="mybooking.html">My Booking<span>→</span></a>
+                    <a href="password_manager.html">Password Manager<span>→</span></a>
+                    <a href="logout.html">Logout<span>→</span></a>
+                </div>
+            </div>
+            <a href="wishlist.html" class="icon1"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" class="icon1"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="" class="icon1"><i class="fa-regular fa-bell"></i></a>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <div class="summary-box">
+
+                <div class="summary-title">Order Summary</div>
+
+                <div class="summary-item">
+                    <span>Booking package</span>
+                    <span>1</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>Rs.25000</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Taxes</span>
+                    <span>Rs.00.0</span>
+                </div>
+
+                <div class="summary-item">
+                    <span>Coupen Discount</span>
+                    <span>Rs.5000</span>
+                </div>
+
+                <div class="total-section summary-item">
+                    <span>Total</span>
+                    <span>Business Class</span>
+                    <span>Rs.20000</span>
+                </div>
+
+            </div>
+
+            <div class="payment-menu">
+                <div class="payment">
+                    <p>Payment Selection</p>
+                    <i class="fa-solid fa-angle-down" onclick="toggleMenu2()"></i>
+                </div>
+
+                <div class="dropdown3" id="dropdownMenu2">
+                    <a href="#" class="card-payment"  onclick="showForm('credit')">Credit card</a>
+                    <a href="#" class="card-payment">Debit card</a>
+                    <a href="#" class="card-payment">Google Pay</a>
+                    <a href="#" class="card-payment">UPI</a>
+                </div>
+            </div>
+
+            <div class="payment-form" id="creditForm">
+                <form class="form-container" id="contactForm">
+                    <div class="form-label">
+                        <label>Card Holder Name</label>
+                        <input type="text"/>
+                    </div>
+
+                    <div class="form-label">
+                        <label>Card Number</label>
+                        <input type="number"/>
+                    </div>
+
+                    <div class="form-label">
+                        <label>Expiry Date</label>
+                        <input type="text"/>
+                    </div>
+
+                    <div class="form-label">
+                        <label>Cvv</label>
+                        <input type="password"/>
+                    </div>
+                    <button type="submit" id="proceedBtn" class="proceed-btn">Proceed</button>
+                </form>
+                <div id="successMessage1" class="success-message">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Payment Done successfully</p>
+                    <p>Order has been Placed</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="travel_images/logo.png" alt="Logo"/>
+                <span>Wanderwise</span>
+            </div>
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>How It Works</li>
+                    <li>Success</li>
+                    <li>Vacations</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Browse</li>
+                    <li>Packages</li>
+                    <li>Categories</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Explore</h2>
+                <ul>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                    <li>City Tours</li>
+                    <li>Family</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact & Social</h2>
+                <ul>
+                    <li>123 saik street, chennai, TN</li>
+                    <li>+91-7867980-688</li>
+                    <li>Wan@wanderwisetravel.com</li>
+                </ul>
+            </div>
+
+            <img src="travel_images/footer-logo.jpg" alt="Footer Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-container2">
+            <div class="footer-section1">
+                <p class="copyrights">&copy; 2025 wanderwisevacation. All rights reserved.</p>
+                <p class="terms">Terms & Conditions | Privacy Policy</p>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us On:</h2>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook facebook-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const inp = document.getElementById("inputvalue")
+
+        input.addEventListener('click', function() {
+            inp.value = "Destination Lists";
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.profile-menu')) {
+                document.getElementById('dropdownMenu').style.display = 'none';
+            }
+        });
+
+
+        function toggleMenu2() {
+            const dropdown = document.getElementById("dropdownMenu2");
+            const paymentMenu = document.querySelector(".payment-menu");
+
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+            paymentMenu.classList.toggle("open");
+        }
+
+        function showForm(type) {
+            const paymentMenu = document.querySelector(".payment-menu");
+            const form = document.getElementById("creditForm");
+
+            paymentMenu.classList.add("fade-out");
+            setTimeout(() => {
+                paymentMenu.style.display = "none";
+                form.classList.add("active");
+                form.scrollIntoView({ behavior: "smooth" });
+            }, 300);
+        }
+
+        window.addEventListener("click", (e) => {
+            if (!e.target.closest(".payment-menu")) {
+                document.getElementById("dropdownMenu2").style.display = "none";
+            }
+        });
+
+        const form = document.getElementById("contactForm");
+        const successMsg = document.getElementById("successMessage1");
+        const proceedBtn = document.getElementById("proceedBtn");
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            form.classList.add("fade-out"); 
+
+            setTimeout(() => {
+                form.style.display = "none";
+                successMsg.classList.add("show");
+            }, 500);
+
+            setTimeout(() => {
+                window.location.href = "home1.html"; 
+            }, 2200);
+        });
+
+    </script>
+</body>
+</html>

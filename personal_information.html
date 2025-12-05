@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information - Travel Vacation Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="travel_images/logo.png" alt="Logo"/>
+            <span>Wanderwise</span>
+        </div>
+
+        <div class="search_nav">
+            <div class="search-box" id="myInput">
+                <input type="text"  id="inputvalue" placeholder="Search Destinations">
+                <a href="destination.html"><button><i class="fa fa-search"></i></button></a>
+            </div>
+
+            <nav class="menu">
+                <a href="home1.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="categories.html">Categories</a>
+                <a href="packages.html">Packages</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="user-details">
+            <div class="profile-menu">
+                <img src="travel_images/profile.jpg" alt="user" class="user-profile" onclick="toggleMenu()">
+
+                <div class="dropdown" id="dropdownMenu">
+                    <h3>My Accounts</h3>
+                    <a href="personal_information.html">Personal Information<span>→</span></a>
+                    <a href="mybooking.html">My Booking<span>→</span></a>
+                    <a href="password_manager.html">Password Manager<span>→</span></a>
+                    <a href="logout.html">Logout<span>→</span></a>
+                </div>
+            </div>
+            <a href="wishlist.html" class="icon1"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" class="icon1"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="" class="icon1"><i class="fa-regular fa-bell"></i></a>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="account">
+            <h2>My Account</h2>
+            <img class="account-user" src="travel_images/profile.jpg" alt="user-image">
+        </div>
+        <div class="container1">
+            <div class="sidebar">
+                <a href="" class="active">Personal Information</button></a>
+                <a href="mybooking.html">My Booking</button></a>
+                <a href="password_manager.html">Password Manager</button></a>
+                <a href="logout.html">Logout</button></a>
+            </div>
+
+            <div class="main-content">
+                <form class="profile-form">
+                    <div class="row1">
+                        <div class="input-group1">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                        </div>
+                        <div class="input-group1">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                        </div>
+                    </div>
+
+                    <div class="input-group1">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your e-mail">
+                    </div>
+
+                    <div class="input-group1">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+
+                    <div class="input-group1">
+                        <label for="gender">Gender</label>
+                        <input type="text" id="gender" name="gender">
+                    </div>
+
+                    <button type="submit" class="update-btn">Update Change</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="travel_images/logo.png" alt="Logo"/>
+                <span>Wanderwise</span>
+            </div>
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>How It Works</li>
+                    <li>Success</li>
+                    <li>Vacations</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Browse</li>
+                    <li>Packages</li>
+                    <li>Categories</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Explore</h2>
+                <ul>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                    <li>City Tours</li>
+                    <li>Family</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact & Social</h2>
+                <ul>
+                    <li>123 saik street, chennai, TN</li>
+                    <li>+91-7867980-688</li>
+                    <li>Wan@wanderwisetravel.com</li>
+                </ul>
+            </div>
+
+            <img src="travel_images/footer-logo.jpg" alt="Footer Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-container2">
+            <div class="footer-section1">
+                <p class="copyrights">&copy; 2025 wanderwisevacation. All rights reserved.</p>
+                <p class="terms">Terms & Conditions | Privacy Policy</p>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us On:</h2>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook facebook-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const inp = document.getElementById("inputvalue")
+
+        input.addEventListener('click', function() {
+            inp.value = "Destination Lists";
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.profile-menu')) {
+                document.getElementById('dropdownMenu').style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+</html>

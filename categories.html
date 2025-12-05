@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Travel Vacation Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="travel_images/logo.png" alt="Logo"/>
+            <span>Wanderwise</span>
+        </div>
+
+        <div class="search_nav">
+            <div class="search-box" id="myInput">
+                <input type="text"  id="inputvalue" placeholder="Search Destinations">
+                <a href="destination.html"><button><i class="fa fa-search"></i></button></a>
+            </div>
+
+            <nav class="menu">
+                <a href="home1.html">Home</a>
+                <a href="destination.html">Destinations</a>
+                <a href="contact.html"  class="active">Categories</a>
+                <a href="packages.html">Packages</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="user-details">
+            <div class="profile-menu">
+                <img src="travel_images/profile.jpg" alt="user" class="user-profile" onclick="toggleMenu()">
+
+                <div class="dropdown" id="dropdownMenu">
+                    <h3>My Accounts</h3>
+                    <a href="personal_information.html">Personal Information<span>→</span></a>
+                    <a href="mybooking.html">My Booking<span>→</span></a>
+                    <a href="password_manager.html">Password Manager<span>→</span></a>
+                    <a href="logout.html">Logout<span>→</span></a>
+                </div>
+            </div>
+            <a href="wishlist.html" class="icon1"><i class="fa-regular fa-heart"></i></a>
+            <a href="cart.html" class="icon1"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="" class="icon1"><i class="fa-regular fa-bell"></i></a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="exclusive-packages1">
+            <div class="filter-container">
+                <h2>Filter Section</h2>
+
+                <div class="section" style="margin-bottom: 4rem;">
+                    <label class="title">Price Range</label>
+                    <div class="price-values">
+                        <span>10,000</span>
+                        <span>2,00,000</span>
+                    </div>
+                    <input type="range" min="10000" max="200000" class="range-slider">
+                </div>
+
+                <div class="section">
+                    <label class="title">Destination</label>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Country</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>City</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="row">
+                        <div class="input-group">
+                            <label>From</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-group">
+                            <label>To</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Duration</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label class="title">Trip Type</label>
+                    <div class="input-check">
+                        <label><input type="checkbox">Beach holiday</label>
+                        <label><input type="checkbox">Adventure holiday</label>
+                        <label><input type="checkbox">Honeymoon holiday</label>
+                        <label><input type="checkbox">Family Vacation holiday</label>
+                        <label><input type="checkbox">Cultural Trip holiday</label>
+                        <label><input type="checkbox">Budget holiday</label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label class="title">Accommodation Type</label>
+                    <div class="input-check">
+                        <label><input type="radio" id="hotel" name="acc">Hotel</label>
+                        <label><input type="radio" id="resort" name="acc">Resort</label>
+                        <label><input type="radio" id="villa" name="acc">Villa</label>
+                        <label><input type="radio" id="hostel" name="acc">Hostel</label>
+                        <label><input type="radio" id="cruise" name="acc">Cruise</label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label class="title">Departure City</label>
+                    <div class="input-check">
+                        <label><input type="radio" id="mumbai" name="dep">Mumbai</label>
+                        <label><input type="radio" id="delhi" name="dep">Delhi</label>
+                        <label><input type="radio" id="bangalore" name="dep">Bangalore</label>
+                        <label><input type="radio" id="chennai" name="dep">Chennai</label>
+                        <label><input type="radio" id="kolkata" name="dep">Kolkata</label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label class="title">Special Offer</label>
+                    <div class="input-check">
+                        <label><input type="radio" id="discount" name="special">Discount</label>
+                        <label><input type="radio" id="last_minute" name="special">Last minute-deals</label>
+                        <label><input type="radio" id="All-inclusive" name="special">All-inclusive</label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label class="title">Suitable for</label>
+                    <div class="input-check">
+                        <label><input type="radio" id="solo" name="suitable">Solo</label>
+                        <label><input type="radio" id="couple" name="suitable">Couple</label>
+                        <label><input type="radio" id="family" name="suitable">Family</label>
+                    </div>
+                </div>
+
+                <div class="section" style="margin-bottom: 1rem;">
+                    <label class="title">Ratings</label>
+                    <div class="input-check">
+                        <label><input type="radio" id="5star" name="rating">5 Star</label>
+                        <label><input type="radio" id="4star" name="rating">4 Star & Above</label>
+                    </div>
+                </div>
+
+                <a href="submit.html"><button type="submit" class="submit-btn">Submit</button></a>
+            </div>
+
+            <div class="package-container1">
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+                    <img src="travel_images/popular1.png" alt="Paris">
+                    <p class="place">Paris</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$1200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+                    <img src="travel_images/popular2.png" alt="Bali">
+                    <p class="place">Bali</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/popular3.jpg" alt="Cape Town">
+                    <p class="place">Cape Town</p>
+                    <p class="days">7 Days / 6 Nights</p>
+                    <p class="price">$1800</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category1.jpg" alt="Mangoliya">
+                    <p class="place">Mangoliya</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$1200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category2.jpg" alt="Megalaya">
+                    <p class="place">Megalaya</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category3.jpg" alt="Megalaya">
+                    <p class="place">Megalaya</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category4.jpg" alt="Antartic sea">
+                    <p class="place">Antartic sea</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$1200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category5.jpg" alt="Salicioni">
+                    <p class="place">Salicioni</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category6.jpg" alt="Swedon">
+                    <p class="place">Swedon</p>
+                    <p class="days">7 Days / 6 Nights</p>
+                    <p class="price">$1800</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category7.jpg" alt="kkumta">
+                    <p class="place">kkumta</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category8.jpg" alt="nikasi">
+                    <p class="place">Nikasi</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category9.jpg" alt="Sihsa Town">
+                    <p class="place">Sihsa Town</p>
+                    <p class="days">7 Days / 6 Nights</p>
+                    <p class="price">$1800</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category10.jpg" alt="egypto">
+                    <p class="place">Egypto</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$1200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category11.jpg" alt="Narackp">
+                    <p class="place">Narackp</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category12.jpg" alt="edaptokan">
+                    <p class="place">edaptokan</p>
+                    <p class="days">7 Days / 6 Nights</p>
+                    <p class="price">$1800</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category13.jpg" alt="portuguese">
+                    <p class="place">portuguese</p>
+                    <p class="days">6 Days / 5 Nights</p>
+                    <p class="price">$1200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category14.jpg" alt="sigman">
+                    <p class="place">Sigman</p>
+                    <p class="days">8 Days / 7 Nights</p>
+                    <p class="price">$2200</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+
+                <div class="package-card">
+                    <button class="btnwishlist">
+                        <i class="icon fa-regular fa-heart"></i>
+                    </button>
+
+                    <img src="travel_images/category15.jpg" alt="throne canava">
+                    <p class="place">throne canava</p>
+                    <p class="days">7 Days / 6 Nights</p>
+                    <p class="price">$1800</p>
+                    <a href="checkout.html"><button class="book-btn">Book now</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <img src="travel_images/logo.png" alt="Logo"/>
+                <span>Wanderwise</span>
+            </div>
+            <div class="footer-section">
+                <h2>About Us</h2>
+                <ul>
+                    <li>Who We Are</li>
+                    <li>Our Mission</li>
+                    <li>How It Works</li>
+                    <li>Success</li>
+                    <li>Vacations</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>Browse</li>
+                    <li>Packages</li>
+                    <li>Categories</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Explore</h2>
+                <ul>
+                    <li>Adventure</li>
+                    <li>Beach</li>
+                    <li>City Tours</li>
+                    <li>Family</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h2>Contact & Social</h2>
+                <ul>
+                    <li>123 saik street, chennai, TN</li>
+                    <li>+91-7867980-688</li>
+                    <li>Wan@wanderwisetravel.com</li>
+                </ul>
+            </div>
+
+            <img src="travel_images/footer-logo.jpg" alt="Footer Logo" class="footer-logo">
+        </div>
+
+        <div class="footer-container2">
+            <div class="footer-section1">
+                <p class="copyrights">&copy; 2025 wanderwisevacation. All rights reserved.</p>
+                <p class="terms">Terms & Conditions | Privacy Policy</p>
+            </div>
+
+            <div class="social-icons">
+                <h2>Follow Us On:</h2>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook facebook-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const input = document.getElementById('myInput');
+        const inp = document.getElementById("inputvalue")
+
+        input.addEventListener('click', function() {
+            inp.value = "Destination Lists";
+        });
+
+        document.querySelectorAll('.btnwishlist').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const icon = this.querySelector('.icon');
+                
+                if (icon.classList.contains('fa-regular')) {
+                    icon.classList.remove('fa-regular');
+                    icon.classList.add('fa-solid');
+                } else {
+                    icon.classList.remove('fa-solid');
+                    icon.classList.add('fa-regular');
+                }
+
+                icon.classList.toggle('active');
+            });
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.profile-menu')) {
+                document.getElementById('dropdownMenu').style.display = 'none';
+            }
+        });
+
+    </script>
+</body>
+</html>
